@@ -8,7 +8,7 @@
 define e = Character("Test", color="#ffffff")
         
 # Backgrounds
-
+image bg0 = "images/testbg0.jpg"
 image bg1 = "images/testbg1.jpg"
 image bg2 = "images/testbg2.jpg"
 
@@ -18,29 +18,27 @@ image bg2 = "images/testbg2.jpg"
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg0
+    with fade
 
-    scene bg2
+    # Prologue
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "The highway has some solitary cars driving along above the neon lit city at breakneck speeds. You’ve been driving this route home for so long it’s second nature."
+    
+    "You’ve been overworked lately and worry that you will be too tired to do anything but go directly to sleep when you get home, much to your wife’s chagrin."
+    
+    "You heave a sigh, fingers tightening on the steering wheel as you briefly look down as you drive on a straight stretch of road, thumb and forefinger moving to massage the bridge of your nose."
+    
+    "Something strikes the wheel and you hear a loud pop and the sound of metal against asphalt. The car begins to veer right and in a panic you turn it in the opposite direction to compensate."
+    
+    "A few tense moments later and the car is spinning out, going off the side of the autobahn and plunging into the dark streets below."
+    
+    "As if it is happening to someone else, you sense the weight of the car slam and roll, before darkness overtakes you."
 
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "Hello, world. Lorem Ipsum, etc."
-
-
-    jump scene1
-
-label scene1:
+    # Scene 2
     
     scene bg1
     
-    e"This is a new scene."
+    e"Scene2"
     
     return
