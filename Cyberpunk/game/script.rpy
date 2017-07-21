@@ -5,7 +5,7 @@
 
 
 # Characters
-define e = Character("Test", color="50d4ff")
+define e = Character("Test", color="#ffffff")
         
 # Backgrounds
 
